@@ -16,5 +16,10 @@ Checks the availability status of a book.
 ### Brorrwer class:
 This class contains borrow_book, return_book & create_account functions.
 #### borrow_book() function:
-Helps members to borrow books from the library if available.
-#### 
+Helps members to borrow books from the library if available. Note one can only borrow one book at a time.
+(I will modify this one)
+#### return_book() function:
+Helps members to return their borrowed books.
+#### create_account() function:
+This one is for creating a new account. A new member id will automatically be generated.
+
