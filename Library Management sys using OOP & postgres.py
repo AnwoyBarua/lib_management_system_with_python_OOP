@@ -2,18 +2,25 @@
 # # Parent class Book, Borrower. 
 # # Child class Library.
 # ###########
-# ## Book class will contain ===>
-# ## functions --> add_book(title, author, ISBN, pub year)
-# ## function --> search_book(author, title)
+# ## Book class contains ===>
+# ## function --> add_book()
+### This function will help you to add one or more books.
+# ## function --> search_book()
+### This function is used to check whether a book is available.
 # ###########
-# ## Borrwer claas will contain ===>
-# ## function --> borrow_book(borrwer_id, author, title) 
-# ## function --> return_book(borrwer_id, author, title, sl.no = optional)
-# # function create_account(name, age, gender, contact, mail)
+# ## Borrwer class contains ===>
+# ## function --> borrow_book() 
+### This function is used to help members borrow books they want. Note: they can only borrow one book at a time.
+# ## function --> return_book()
+### This function helps members to return books that they borrowed.
+# # function create_account()
+### create a new user account.
 
 import csv
 import pandas as pd
-book_url = "E:\Programming\python\OOP projects\Data\\books.csv"
+
+# Change the file path to run them on your computer.
+book_url = "E:\Programming\python\OOP projects\Data\\books.csv" 
 borrower_url = "E:\Programming\python\OOP projects\Data\\borrowers.csv"
 
 class Book:
@@ -24,7 +31,7 @@ class Book:
     def add_book(self):
         '''
             This class can be used to add new books to your library. It can take one or more than one book list
-            Version:01 --> Error Handling remaining for all the function.
+            Version:01 --> Error Handling remaining for all the functions.
         '''
         books = []
         n = int(input("How many books do you want to insert?\n"))
