@@ -23,5 +23,5 @@ Helps members to return their borrowed books.
 #### create_account() function:
 This one is for creating a new account. A unique member id will automatically be generated.
 
-# Library class:
+### Library class:
 Finally library class inherits all the functionality of the above classes.
